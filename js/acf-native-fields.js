@@ -9,7 +9,7 @@
 		init: function() {
 			ACF_Native_Fields.editor_container = $('#post-body');
 			ACF_Native_Fields.native_fields = ACF_Native_Fields.editor_container.find('.acf-native-field');
-			
+
 			// Move all native fields into their placeholders
 			ACF_Native_Fields.moveNativeFields();
 		},
@@ -75,6 +75,20 @@
 				native_field_placeholder.html(acf._e('native_field', 'not_implemented'));
 			}
 		},
+
+    /**
+     * ACF Native Field type: WordPress Post Title
+     */
+    moveNativeField_post_title: function () {
+      return ACF_Native_Fields.getNativeFieldElement('#titlediv');
+    },
+
+    /**
+     * ACF Native Field type: WordPress content editor
+     */
+    moveNativeField_post_date: function () {
+      return ACF_Native_Fields.getNativeFieldElement('.misc-pub-curtime');
+    },
 
 		/**
 		 * ACF Native Field type: WordPress content editor
