@@ -159,6 +159,139 @@
 		moveNativeField_page_attributes: function() {
 			return ACF_Native_Fields.getNativeFieldElement('#pageparentdiv');
 		},
+
+        /**
+         * ACF Native Field type: Revisions
+         */
+        moveNativeField_revisions: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#revisionsdiv');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Quiz Questions Metabox
+         */
+        moveNativeField_sensei_quiz_questions: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#lesson-quiz');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Quiz Settings Metabox
+         */
+        moveNativeField_sensei_quiz_settings: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#lesson-quiz-settings');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Quiz Questions Metabox
+         */
+        moveNativeField_sensei_lesson_info: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#lesson-info');
+        },
+
+		/**
+		 * ACF Native Field type: Sensei Lesson Course Metabox
+		 */
+		moveNativeField_sensei_lesson_course: function() {
+			return ACF_Native_Fields.getNativeFieldElement('#lesson-course');
+		},
+
+		/**
+		 * ACF Native Field type: Sensei Module Select Metabox
+		 */
+		moveNativeField_sensei_module_select: function() {
+			return ACF_Native_Fields.getNativeFieldElement('#module_select');
+		},
+
+        /**
+         * ACF Native Field type: Sensei Lesson Prerequisite Metabox
+         */
+        moveNativeField_sensei_lesson_prerequisite: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#lesson-prerequisite');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Lesson Tags Metabox
+         */
+        moveNativeField_sensei_lesson_tags: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#tagsdiv-lesson-tag');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Lesson Preview Metabox
+         */
+        moveNativeField_sensei_lesson_preview: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#lesson-preview');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Teacher
+         */
+        moveNativeField_sensei_teacher: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#sensei-teacher');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Course Category
+         */
+        moveNativeField_sensei_course_categories: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#course-categorydiv');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Course Prerequisites
+         */
+        moveNativeField_sensei_course_prerequisites: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#course-prerequisite');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Featured Course
+         */
+        moveNativeField_sensei_course_featured: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#course-featured');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Course Notifications
+         */
+        moveNativeField_sensei_course_notifications: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#course-notifications');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Course Modules
+         */
+        moveNativeField_sensei_course_modules: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#module_course_mb');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Course Lessons
+         */
+        moveNativeField_sensei_course_lessons: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#course-lessons');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Course Video
+         */
+        moveNativeField_sensei_course_video: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#course-video');
+        },
+
+        /**
+         * ACF Native Field type: Sensei WooCommerce Product
+         */
+        moveNativeField_sensei_course_wc_product: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#course-wc-product');
+        },
+
+        /**
+         * ACF Native Field type: Sensei Course Management
+         */
+        moveNativeField_sensei_course_management: function() {
+            return ACF_Native_Fields.getNativeFieldElement('#course-manage');
+        },
 	};
 
 	$(document).ready(ACF_Native_Fields.init);

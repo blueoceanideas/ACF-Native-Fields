@@ -40,6 +40,27 @@ class acf_field_native extends acf_field {
 				'trackbacks'	 => __('Trackbacks', 'acf-native-fields'),
 				'format'		 => __('Format', 'acf-native-fields'),
 				'page_attributes'=> __('Page Attributes', 'acf-native-fields'),
+                'revisions'      => __('Revisions', 'acf-native-fields'),
+                'sensei_quiz_questions'      => __('Sensei Quiz Questions', 'acf-native-fields'),
+                'sensei_quiz_settings'       => __('Sensei Quiz Settings', 'acf-native-fields'),
+                'sensei_lesson_info'         => __('Sensei Lesson Info', 'acf-native-fields'),
+                'sensei_lesson_course'       => __('Sensei Lesson Course', 'acf-native-fields'),
+                'sensei_module_select'       => __('Sensei Module Select', 'acf-native-fields'),
+                'sensei_lesson_prerequisite' => __('Sensei Lesson Prerequisite', 'acf-native-fields'),
+                'sensei_lesson_preview'      => __('Sensei Lesson Preview', 'acf-native-fields'),
+                'sensei_lesson_tags'         => __('Sensei Lesson Tags', 'acf-native-fields'),
+
+                'sensei_teacher'              => __('Sensei Teacher', 'acf-native-fields'),
+                'sensei_course_categories'    => __('Sensei Course Categories', 'acf-native-fields'),
+                'sensei_course_prerequisites'  => __('Sensei Course Prerequisites', 'acf-native-fields'),
+                'sensei_course_featured'      => __('Sensei Featured Course', 'acf-native-fields'),
+                'sensei_course_notifications' => __('Sensei Course Notifications', 'acf-native-fields'),
+                'sensei_course_modules'       => __('Sensei Course Modules', 'acf-native-fields'),
+                'sensei_course_lessons'       => __('Sensei Course Lessons', 'acf-native-fields'),
+                'sensei_course_video'         => __('Sensei Course Video', 'acf-native-fields'),
+                'sensei_course_wc_product'    => __('Sensei Course WooCommerce Product', 'acf-native-fields'),
+                'sensei_course_management'    => __('Sensei Course Management', 'acf-native-fields'),
+
 			),
 		));
 	}
