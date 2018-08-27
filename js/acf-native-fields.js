@@ -188,19 +188,19 @@
             return ACF_Native_Fields.getNativeFieldElement('#lesson-info');
         },
 
-		/**
-		 * ACF Native Field type: Sensei Lesson Course Metabox
-		 */
-		moveNativeField_sensei_lesson_course: function() {
-			return ACF_Native_Fields.getNativeFieldElement('#lesson-course');
-		},
+        /**
+         * ACF Native Field type: Sensei Lesson Course Metabox
+         */
+        moveNativeField_sensei_lesson_course: function() {
+          return ACF_Native_Fields.getNativeFieldElement('#lesson-course');
+        },
 
-		/**
-		 * ACF Native Field type: Sensei Module Select Metabox
-		 */
-		moveNativeField_sensei_module_select: function() {
-			return ACF_Native_Fields.getNativeFieldElement('#module_select');
-		},
+        /**
+         * ACF Native Field type: Sensei Module Select Metabox
+         */
+        moveNativeField_sensei_module_select: function() {
+          return ACF_Native_Fields.getNativeFieldElement('#module_select');
+        },
 
         /**
          * ACF Native Field type: Sensei Lesson Prerequisite Metabox
