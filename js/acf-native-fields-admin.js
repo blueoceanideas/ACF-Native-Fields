@@ -14,7 +14,7 @@
 			}
 
 			// clear name
-			$el.find('.acf-field[data-name="name"] input').val('').trigger('change');
+			// $el.find('.acf-field[data-name="name"] input').val('').trigger('change');
 
 			console.log('native_field');
 		}
