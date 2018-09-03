@@ -28,8 +28,8 @@ class acf_field_native extends acf_field {
 			'name'			=> 'native_field',
 			// TODO: Implement backend and frontend functionality for custom native fields (hooks)
 			'choices'		=> array(
-                'post_title' => __('Post Title', 'acf-native-fields'),
-                'post_date' => __('Post Date', 'acf-native-fields'),
+                'post_title'     => __('Post Title', 'acf-native-fields'),
+                'post_date'      => __('Post Date', 'acf-native-fields'),
 				'content'		 => __('Content Editor', 'acf-native-fields'),
 				'excerpt'		 => __('Excerpt', 'acf-native-fields'),
 				'featured_image' => __('Featured Image', 'acf-native-fields'),
@@ -41,6 +41,12 @@ class acf_field_native extends acf_field {
 				'format'		 => __('Format', 'acf-native-fields'),
 				'page_attributes'=> __('Page Attributes', 'acf-native-fields'),
                 'revisions'      => __('Revisions', 'acf-native-fields'),
+
+                // User Fields
+                'username'      => __('User: Username', 'acf-native-fields'),
+                'email'         => __('User: Email', 'acf-native-fields'),
+                'account_funds' => __('User: Account Funds', 'acf-native-fields'),
+
                 'sensei_quiz_questions'      => __('Sensei Quiz Questions', 'acf-native-fields'),
                 'sensei_quiz_settings'       => __('Sensei Quiz Settings', 'acf-native-fields'),
                 'sensei_lesson_info'         => __('Sensei Lesson Info', 'acf-native-fields'),
@@ -52,7 +58,7 @@ class acf_field_native extends acf_field {
 
                 'sensei_teacher'              => __('Sensei Teacher', 'acf-native-fields'),
                 'sensei_course_categories'    => __('Sensei Course Categories', 'acf-native-fields'),
-                'sensei_course_prerequisites'  => __('Sensei Course Prerequisites', 'acf-native-fields'),
+                'sensei_course_prerequisites' => __('Sensei Course Prerequisites', 'acf-native-fields'),
                 'sensei_course_featured'      => __('Sensei Featured Course', 'acf-native-fields'),
                 'sensei_course_notifications' => __('Sensei Course Notifications', 'acf-native-fields'),
                 'sensei_course_modules'       => __('Sensei Course Modules', 'acf-native-fields'),
@@ -60,7 +66,6 @@ class acf_field_native extends acf_field {
                 'sensei_course_video'         => __('Sensei Course Video', 'acf-native-fields'),
                 'sensei_course_wc_product'    => __('Sensei Course WooCommerce Product', 'acf-native-fields'),
                 'sensei_course_management'    => __('Sensei Course Management', 'acf-native-fields'),
-
 			),
 		));
 	}
