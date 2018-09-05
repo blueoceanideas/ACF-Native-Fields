@@ -189,6 +189,38 @@
     },
 
     /**
+     * Product Fields
+     */
+    // WooCommerce Product Data
+    moveNativeField_product_woocommerce_product_data: function () {
+      return ACF_Native_Fields.getNativeFieldElement('#woocommerce-product-data');
+    },
+    // WooCommerce Memberships
+    moveNativeField_product_woocommerce_memberships: function () {
+      return ACF_Native_Fields.getNativeFieldElement('#wc-memberships-product-memberships-data');
+    },
+    // SEO Settings
+    moveNativeField_product_seo_settings: function () {
+      return ACF_Native_Fields.getNativeFieldElement('#tsf-inpost-box');
+    },
+    // Attendee Report
+    moveNativeField_product_attendee_report: function () {
+      return ACF_Native_Fields.getNativeFieldElement('#lrt_print_attendee_report');
+    },
+    // Name Tags
+    moveNativeField_product_name_tags: function () {
+      return ACF_Native_Fields.getNativeFieldElement('#lrt_print_labels');
+    },
+    // Fix Tickets
+    moveNativeField_product_fix_tickets: function () {
+      return ACF_Native_Fields.getNativeFieldElement('#fix_tickets_with_missing_product_attributes');
+    },
+    // Provision API
+    moveNativeField_product_provision_api: function () {
+      return ACF_Native_Fields.getNativeFieldElement('#lrt_meridian_provision_ticket');
+    },
+
+    /**
      * ACF Native Field type: Sensei Quiz Questions Metabox
      */
     moveNativeField_sensei_quiz_questions: function() {

@@ -47,6 +47,15 @@ class acf_field_native extends acf_field {
                 'email'         => __('User: Email', 'acf-native-fields'),
                 'account_funds' => __('User: Account Funds', 'acf-native-fields'),
 
+                // Product Fields
+                'product_woocommerce_product_data'   => __('Product: WooCommerce Product Data', 'acf-native-fields'),
+                'product_woocommerce_memberships'    => __('Product: WooCommerce Memberships', 'acf-native-fields'),
+                'product_seo_settings'               => __('Product: SEO Settings', 'acf-native-fields'),
+                'product_attendee_report'            => __('Product: Attendee Report', 'acf-native-fields'),
+                'product_name_tags'                  => __('Product: Name Tags', 'acf-native-fields'),
+                'product_fix_tickets'                => __('Product: Fix Tickets', 'acf-native-fields'),
+                'product_provision_api'              => __('Product: Provision API', 'acf-native-fields'),
+
                 'sensei_quiz_questions'      => __('Sensei Quiz Questions', 'acf-native-fields'),
                 'sensei_quiz_settings'       => __('Sensei Quiz Settings', 'acf-native-fields'),
                 'sensei_lesson_info'         => __('Sensei Lesson Info', 'acf-native-fields'),
