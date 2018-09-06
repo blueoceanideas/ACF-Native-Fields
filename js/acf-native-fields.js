@@ -221,6 +221,44 @@
     },
 
     /**
+     * Order Fields
+     */
+    // WooCommerce Order Status
+    moveNativeField_order_woocommerce_status: function () {
+      return ACF_Native_Fields.getNativeFieldElement('p.wc-order-status');
+    },
+    // WooCommerce Order Date Created
+    moveNativeField_order_woocommerce_date_created: function () {
+      return ACF_Native_Fields.getNativeFieldElement('.lrt_wc_order_date_created');
+    },
+    // WooCommerce Customer
+    moveNativeField_order_woocommerce_date_paid: function () {
+      return ACF_Native_Fields.getNativeFieldElement('.lrt-paid-date');
+    },
+    // WooCommerce Customer
+    moveNativeField_order_woocommerce_customer: function () {
+      return ACF_Native_Fields.getNativeFieldElement('p.wc-customer-user');
+    },
+    // WooCommerce Account Funds
+    moveNativeField_order_woocommerce_account_funds: function () {
+      return ACF_Native_Fields.getNativeFieldElement('p.wc-account-funds-used');
+    },
+    // WooCommerce Memberships
+    moveNativeField_order_woocommerce_customer_memberships: function () {
+      return ACF_Native_Fields.getNativeFieldElement('p.wc-customer-memberships');
+    },
+    // WooCommerce Billing Address
+    moveNativeField_order_woocommerce_billing_address: function () {
+      return ACF_Native_Fields.getNativeFieldElement('.lrt_wc_order_billing_address');
+    },
+    // WooCommerce Shipping Address
+    moveNativeField_order_woocommerce_shipping_address: function () {
+      return ACF_Native_Fields.getNativeFieldElement('.lrt_wc_order_shipping_address');
+    },
+
+
+
+    /**
      * ACF Native Field type: Sensei Quiz Questions Metabox
      */
     moveNativeField_sensei_quiz_questions: function() {

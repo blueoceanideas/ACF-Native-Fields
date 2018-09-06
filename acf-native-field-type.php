@@ -56,6 +56,19 @@ class acf_field_native extends acf_field {
                 'product_fix_tickets'                => __('Product: Fix Tickets', 'acf-native-fields'),
                 'product_provision_api'              => __('Product: Provision API', 'acf-native-fields'),
 
+                // Order Fields
+                'order_woocommerce_status'               => __('Order: WooCommerce Status', 'acf-native-fields'), // p.wc-order-status
+                'order_woocommerce_date_created'         => __('Order: WooCommerce Date Created', 'acf-native-fields'), // .lrt_wc_order_date_created
+                'order_woocommerce_date_paid'            => __('Order: WooCommerce Date Paid', 'acf-native-fields'), // .lrt-paid-date
+                'order_woocommerce_customer'             => __('Order: WooCommerce Customer', 'acf-native-fields'), // p.wc-customer-user
+                'order_woocommerce_account_funds'        => __('Order: WooCommerce Account Funds ', 'acf-native-fields'), // p.wc-account-funds-used
+                'order_woocommerce_customer_memberships' => __('Order: WooCommerce Memberships', 'acf-native-fields'), // p.wc-customer-memberships
+                'order_woocommerce_billing_address'      => __('Order: WooCommerce Billing Address', 'acf-native-fields'), // .lrt_wc_order_billing_address
+                'order_woocommerce_shipping_address'     => __('Order: WooCommerce Shipping Address', 'acf-native-fields'), // .lrt_wc_order_shipping_address
+
+                // Universal
+
+
                 'sensei_quiz_questions'      => __('Sensei Quiz Questions', 'acf-native-fields'),
                 'sensei_quiz_settings'       => __('Sensei Quiz Settings', 'acf-native-fields'),
                 'sensei_lesson_info'         => __('Sensei Lesson Info', 'acf-native-fields'),
