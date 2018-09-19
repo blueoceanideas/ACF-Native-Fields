@@ -14,7 +14,7 @@ class acf_field_native extends acf_field {
 		$this->category = 'layout';
 
 		$this->l10n = array(
-			'not_implemented' => __('Native Field not implemented yet.', 'acf-native-fields'),
+			'not_implemented' => __('-', 'acf-native-fields'),
 		);
 
     	parent::__construct();
