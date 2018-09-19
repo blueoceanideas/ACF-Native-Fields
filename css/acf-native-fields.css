@@ -29,3 +29,11 @@
 .acf-native-field h2 {
 	display: none;
 }
+
+/* Don't hide the metabox handle for the WC metabox */
+.acf-native-field #woocommerce-product-data.native-field-postbox h2 {
+  display: block;
+}
+.acf-native-field select#product-type {
+  width: inherit !important;
+}
