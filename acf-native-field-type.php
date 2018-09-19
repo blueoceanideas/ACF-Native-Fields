@@ -55,6 +55,7 @@ class acf_field_native extends acf_field {
                 'product_name_tags'                  => __('Product: Name Tags', 'acf-native-fields'),
                 'product_fix_tickets'                => __('Product: Fix Tickets', 'acf-native-fields'),
                 'product_provision_api'              => __('Product: Provision API', 'acf-native-fields'),
+                'product_check_in_requests'          => __('Product: E-Learning Platform Check-in Request Activity', 'acf-native-fields'),
 
                 // Order Fields
                 'order_woocommerce_status'               => __('Order: WooCommerce Status', 'acf-native-fields'), // p.wc-order-status

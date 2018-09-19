@@ -219,6 +219,10 @@
     moveNativeField_product_provision_api: function () {
       return ACF_Native_Fields.getNativeFieldElement('#lrt_meridian_provision_ticket');
     },
+    // Provision API
+    moveNativeField_product_check_in_requests: function () {
+      return ACF_Native_Fields.getNativeFieldElement('#check_in_requests');
+    },
 
     /**
      * Order Fields
