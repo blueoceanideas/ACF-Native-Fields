@@ -26,7 +26,7 @@
 }
 
 /* Hide postbox header */
-.acf-native-field h2 {
+.acf-native-field h2.ui-sortable-handle {
 	display: none;
 }
 
@@ -36,4 +36,9 @@
 }
 .acf-native-field select#product-type {
   width: inherit !important;
+}
+
+/* Force native field metaboxes to display content even if they aren't open. */
+.acf-native-field .closed .inside {
+	display: block !important;
 }
