@@ -89,16 +89,35 @@ class acf_field_native extends acf_field {
                 'sensei_course_video'         => __('Sensei Course Video', 'acf-native-fields'),
                 'sensei_course_wc_product'    => __('Sensei Course WooCommerce Product', 'acf-native-fields'),
                 'sensei_course_management'    => __('Sensei Course Management', 'acf-native-fields'),
+
+				'custom'		  => __('Custom', 'acf-native-fields'),
+			),
+		));
+
+		acf_render_field_setting($field, array(
+			'label'				=> __('Custom Meta Box/Element Selector (ID or Class)', 'acf-native-fields'),
+			'instructions'		=> __('The ID or Class of the custom metabox/element to target. Include the "," or "#"', 'acf-native-fields'),
+			'type'				=> 'text',
+			'name'				=> 'metabox-selector',
+			'prefix'			=> '',
+			'conditional_logic' => array(
+				array(
+					array(
+						'field' => 'native_field',
+						'operator' => '==',
+						'value' => 'custom',
+					),
+				),
 			),
 		));
 	}
-
+	
 	function render_field($field) {?>
-		<div class="acf-native-field" data-native-field="<?php echo $field['native_field']; ?>">
+		<div class="acf-native-field" data-native-field="<?php echo esc_attr($field['native_field']); ?>"<?php echo (!empty($field['metabox-selector']) ? ' data-metabox-selector="' . esc_attr($field['metabox-selector']) . '"' : ''); ?>>
 			<?php _e('Loading...', 'acf-native-fields'); ?>
 		</div><?php
 	}
-
+	
 	function input_admin_enqueue_scripts() {
 		wp_enqueue_script('acf-native-fields', plugins_url('/js/acf-native-fields.js', __FILE__), array('jquery'), ACF_Native_Fields::instance()->plugin_data['Version']);
 		wp_enqueue_style('acf-native-fields', plugins_url('/css/acf-native-fields.css', __FILE__), array(), ACF_Native_Fields::instance()->plugin_data['Version']);
