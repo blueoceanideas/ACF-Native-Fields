@@ -168,6 +168,13 @@
     },
 
     /**
+     * ACF Native Field type: User Profile Picture
+     */
+    moveNativeField_user_profile_picture: function () {
+      return ACF_Native_Fields.getNativeFieldElement('.user-profile-picture img.avatar');
+    },
+
+    /**
      * ACF Native Field type: User username
      */
     moveNativeField_username: function () {

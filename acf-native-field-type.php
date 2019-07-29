@@ -44,6 +44,7 @@ class acf_field_native extends acf_field {
 
                 // User Fields
                 'username'      => __('User: Username', 'acf-native-fields'),
+                'user_profile_picture'      => __('User: Profile Picture', 'acf-native-fields'),
                 'email'         => __('User: Email', 'acf-native-fields'),
                 'account_funds' => __('User: Account Funds', 'acf-native-fields'),
 
