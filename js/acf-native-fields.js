@@ -26,15 +26,27 @@
 		},
 
 		/**
-		 * Get a native field element by selector. Wrapper around jQuery.find() to do any processing that needs to be
-		 * done for all native elements before they're moved to an ACF field.
-		 *
-		 * @param selector Selector to pass to jQuery.find();
-		 *
-		 * @return jQuery A jQuery object of the found element
-		 */
-		getNativeFieldElement: function(selector) {
-			return ACF_Native_Fields.handlePostbox(ACF_Native_Fields.editor_container.find(selector));
+     * Get a native field element by selector. Wrapper around jQuery.find() to do any processing that needs to be
+     * done for all native elements before they're moved to an ACF field.
+     *
+     * @param selector Selector to pass to jQuery.find();
+     *
+     * @param handlePostBox
+     * @param removeAcfFieldClassWrapper
+     * @return jQuery A jQuery object of the found element
+     */
+		getNativeFieldElement: function(selector, handlePostBox = true, removeAcfFieldClassWrapper = false) {
+		  var nativeFieldObject = ACF_Native_Fields.editor_container.find(selector);
+
+		  if (handlePostBox === true) {
+        nativeFieldObject = ACF_Native_Fields.handlePostbox(nativeFieldObject);
+      }
+
+		  if (removeAcfFieldClassWrapper === true) {
+        nativeFieldObject = ACF_Native_Fields.handleRemoveAcfFieldClassWrapper(nativeFieldObject);
+      }
+
+		  return nativeFieldObject;
 		},
 
 		/**
@@ -44,11 +56,17 @@
 		 *
 		 * @return jQuery The same object that was passed, native_field
 		 */
-		handlePostbox: function(native_field) {
-			if(native_field.hasClass('postbox')) {
-				native_field.removeClass('postbox').addClass('native-field-postbox');
-				native_field.find('.handlediv, h3').remove();
-			}
+    handlePostbox: function (native_field) {
+      if (native_field.hasClass('postbox')) {
+        native_field.removeClass('postbox').addClass('native-field-postbox');
+        native_field.find('.handlediv, h3').remove();
+      }
+
+      return native_field;
+    },
+
+		handleRemoveAcfFieldClassWrapper: function(native_field) {
+      native_field.addClass('remove-acf-field-class-wrapper');
 
 			return native_field;
 		},
@@ -64,6 +82,11 @@
 			// First try to find a built-in method to run for this type of native field
 			if(typeof ACF_Native_Fields['moveNativeField_' + native_field_type] === 'function') {
 				native_field_placeholder.append(ACF_Native_Fields['moveNativeField_' + native_field_type](native_field_placeholder));
+
+				if (native_field_placeholder.find('.remove-acf-field-class-wrapper').length !== 0) {
+          native_field_placeholder.closest('.acf-field').removeClass('acf-field');
+        }
+
 				// TODO: Allow custom callback code to be added in field group settings and executed here?
 			}
 			// If none exists, see if a custom one has been passed, and exists
@@ -200,7 +223,7 @@
      */
     // WooCommerce Product Data
     moveNativeField_product_woocommerce_product_data: function () {
-      return ACF_Native_Fields.getNativeFieldElement('#woocommerce-product-data');
+      return ACF_Native_Fields.getNativeFieldElement('#woocommerce-product-data', false, false);
     },
     // WooCommerce Memberships
     moveNativeField_product_woocommerce_memberships: function () {
