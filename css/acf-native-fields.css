@@ -30,15 +30,111 @@
 	display: none;
 }
 
-/* Don't hide the metabox handle for the WC metabox */
-.acf-native-field #woocommerce-product-data.native-field-postbox h2 {
-  display: block;
+/* Force native field metaboxes to display content even if they aren't open. */
+.acf-native-field .closed .inside {
+  display: block !important;
 }
+
+/**
+  * WooCommerce Product Data Metabox
+  */
+/* Don't hide the metabox handle for the WC metabox */
+.acf-native-field #woocommerce-product-data h2.hndle {
+  display: block;
+  cursor: default;
+}
+
+.acf-field[data-name='pricing_configuration_native_field'] .acf-label {
+  display:none;
+}
+
 .acf-native-field select#product-type {
   width: inherit !important;
 }
 
-/* Force native field metaboxes to display content even if they aren't open. */
-.acf-native-field .closed .inside {
-	display: block !important;
+.acf-field #woocommerce-product-data select {
+  font-size: 13px;
+  line-height: 1.38461538;
+  padding: 3px 24px 3px 8px;
+  max-width: 25rem;
+  width: unset;
+}
+
+.acf-field #woocommerce-product-data .variations-defaults select {
+  margin: .25em .25em .25em 0;
+}
+
+.acf-field #woocommerce-product-data .form-row input[type=color],
+.acf-field #woocommerce-product-data .form-row input[type=date],
+.acf-field #woocommerce-product-data .form-row input[type=datetime-local],
+.acf-field #woocommerce-product-data .form-row input[type=datetime],
+.acf-field #woocommerce-product-data .form-row input[type=email],
+.acf-field #woocommerce-product-data .form-row input[type=month],
+.acf-field #woocommerce-product-data .form-row input[type=number],
+.acf-field #woocommerce-product-data .form-row input[type=password],
+.acf-field #woocommerce-product-data .form-row input[type=search],
+.acf-field #woocommerce-product-data .form-row input[type=tel],
+.acf-field #woocommerce-product-data .form-row input[type=text],
+.acf-field #woocommerce-product-data .form-row input[type=time],
+.acf-field #woocommerce-product-data .form-row input[type=url],
+.acf-field #woocommerce-product-data .form-row input[type=week],
+.acf-field #woocommerce-product-data .form-row select,
+.acf-field #woocommerce-product-data .form-row textarea {
+  width: 100%;
+  vertical-align: middle;
+  margin: 2px 0 0;
+  padding: 5px;
+}
+
+.acf-field #woocommerce-product-data input[type="text"],
+.acf-field #woocommerce-product-data input[type="password"],
+.acf-field #woocommerce-product-data input[type="date"],
+.acf-field #woocommerce-product-data input[type="datetime"],
+.acf-field #woocommerce-product-data input[type="datetime-local"],
+.acf-field #woocommerce-product-data input[type="email"],
+.acf-field #woocommerce-product-data input[type="month"],
+.acf-field #woocommerce-product-data input[type="number"],
+.acf-field #woocommerce-product-data input[type="search"],
+.acf-field #woocommerce-product-data input[type="tel"],
+.acf-field #woocommerce-product-data input[type="time"],
+.acf-field #woocommerce-product-data input[type="url"],
+.acf-field #woocommerce-product-data input[type="week"] {
+  padding: 0 8px;
+  line-height: 2;
+  min-height: 30px;
+}
+
+.acf-field #woocommerce-product-data input[type="text"],
+.acf-field #woocommerce-product-data input[type="password"],
+.acf-field #woocommerce-product-data input[type="color"],
+.acf-field #woocommerce-product-data input[type="date"],
+.acf-field #woocommerce-product-data input[type="datetime"],
+.acf-field #woocommerce-product-data input[type="datetime-local"],
+.acf-field #woocommerce-product-data input[type="email"],
+.acf-field #woocommerce-product-data input[type="month"],
+.acf-field #woocommerce-product-data input[type="number"],
+.acf-field #woocommerce-product-data input[type="search"],
+.acf-field #woocommerce-product-data input[type="tel"],
+.acf-field #woocommerce-product-data input[type="time"],
+.acf-field #woocommerce-product-data input[type="url"],
+.acf-field #woocommerce-product-data input[type="week"],
+.acf-field #woocommerce-product-data select,
+.acf-field #woocommerce-product-data textarea {
+  box-shadow: 0 0 0 transparent;
+  border-radius: 4px;
+  border: 1px solid #7e8993;
+  background-color: #fff;
+  color: #32373c;
+}
+
+.acf-field #woocommerce-product-data #variable_product_options .form-row select {
+  max-width: 100%;
+}
+
+.acf-field #woocommerce-product-data .wc-metaboxes-wrapper .wc-metabox select {
+  font-weight: 400;
+}
+
+.acf-field #woocommerce-product-data .form-row select {
+  height: 40px;
 }
