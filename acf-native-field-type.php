@@ -112,15 +112,15 @@ class acf_field_native extends acf_field {
 			),
 		));
 	}
-	
+
 	function render_field($field) {?>
 		<div class="acf-native-field" data-native-field="<?php echo esc_attr($field['native_field']); ?>"<?php echo (!empty($field['metabox-selector']) ? ' data-metabox-selector="' . esc_attr($field['metabox-selector']) . '"' : ''); ?>>
 			<?php _e('Loading...', 'acf-native-fields'); ?>
 		</div><?php
 	}
-	
+
 	function input_admin_enqueue_scripts() {
-		wp_enqueue_script('acf-native-fields', plugins_url('/js/acf-native-fields.js', __FILE__), array('jquery'), ACF_Native_Fields::instance()->plugin_data['Version']);
+		wp_enqueue_script('acf-native-fields', plugins_url('/js/acf-native-fields.js', __FILE__), array('jquery'), ACF_Native_Fields::instance()->plugin_data['Version'], true);
 		wp_enqueue_style('acf-native-fields', plugins_url('/css/acf-native-fields.css', __FILE__), array(), ACF_Native_Fields::instance()->plugin_data['Version']);
 	}
 

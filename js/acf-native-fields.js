@@ -404,5 +404,5 @@
 
 	};
 
-	$(document).ready(ACF_Native_Fields.init);
+	ACF_Native_Fields.init();
 })(jQuery);
