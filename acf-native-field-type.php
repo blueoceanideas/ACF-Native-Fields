@@ -120,12 +120,12 @@ class acf_field_native extends acf_field {
 	}
 
 	function input_admin_enqueue_scripts() {
-		wp_enqueue_script('acf-native-fields', plugins_url('/js/acf-native-fields.js', __FILE__), array('jquery'), ACF_Native_Fields::instance()->plugin_data['Version'], true);
-		wp_enqueue_style('acf-native-fields', plugins_url('/css/acf-native-fields.css', __FILE__), array(), ACF_Native_Fields::instance()->plugin_data['Version']);
+		wp_enqueue_script('acf-native-fields', plugins_url('/js/acf-native-fields.js', __FILE__), array('jquery'), LRT_RELEASE_VERSION, true);
+		wp_enqueue_style('acf-native-fields', plugins_url('/css/acf-native-fields.css', __FILE__), array(), LRT_RELEASE_VERSION);
 	}
 
 	function field_group_admin_enqueue_scripts() {
-		wp_enqueue_script('acf-native-fields-admin', plugins_url('/js/acf-native-fields-admin.js', __FILE__), array('jquery'), ACF_Native_Fields::instance()->plugin_data['Version']);
-		wp_enqueue_style('acf-native-fields-admin', plugins_url('/css/acf-native-fields-admin.css', __FILE__), array(), ACF_Native_Fields::instance()->plugin_data['Version']);
+		wp_enqueue_script('acf-native-fields-admin', plugins_url('/js/acf-native-fields-admin.js', __FILE__), array('jquery'), LRT_RELEASE_VERSION);
+		wp_enqueue_style('acf-native-fields-admin', plugins_url('/css/acf-native-fields-admin.css', __FILE__), array(), LRT_RELEASE_VERSION);
 	}
 }
